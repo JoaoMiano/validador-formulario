@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="leftside">
+        <img src="img/fundo.png">
+    </div>
+    <div class="rigthside">
+        <form action="">
+
+            <label for="user">Usuario:</label>
+            <input type="text" name="user" data-rules="required|min=8" id="nome">
+
+            <label for="email">Email:</label>
+            <input type="text" name="email" data-rules="required" id="email">
+
+            <label for="password">Senha:</label>
+            <input type="password" name="password" data-rules="required" id="password">
+
+            <input type="submit">
+        </form>
+        <div>Não tem cadastro? <a href="#">Fazer cadastro</a></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
